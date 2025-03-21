@@ -13,7 +13,7 @@ const questions =[
     },
     {
         "question": "Quais componentes são necessários para estabelecer uma conexão VPN Site-to-Site na AWS?",
-        "options": ["Gateway de Trânsito", "Gateway de Cliente", "Gateway de VPN", "Gateway NAT", "Gateway de Internet"],
+        "options": ["Transit Gateway", "Customer Gateway", "VPN Gateway", "NAT Gateway", "Internet Gateway"],
         "answers": [1, 2],
         "explanation": "Para estabelecer uma conexão VPN Site-to-Site na AWS, são necessários um Gateway de Cliente (definindo o dispositivo ou software do lado do cliente) e um Gateway de VPN (do lado da AWS). [Fonte: AWS Site-to-Site VPN]"
     },
