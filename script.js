@@ -64,7 +64,67 @@ const questions =[
         "options": ["Permitir todo o tráfego de entrada por padrão", "Aplicar o princípio de privilégio mínimo", "Usar regras de entrada e saída específicas", "Configurar regras de negação explícita"],
         "answers": [1, 2],
         "explanation": "Ao configurar grupos de segurança, deve-se aplicar o princípio de privilégio mínimo e usar regras específicas de entrada e saída. Grupos de segurança não suportam regras de negação explícita. [Fonte: AWS Security Groups]"
-    },
+        },
+            {
+            "question": "Qual serviço AWS é recomendado para monitoramento e observabilidade de aplicações?",
+            "options": ["AWS CloudTrail", "Amazon CloudWatch", "AWS X-Ray", "AWS Config"],
+            "answers": [1, 2],
+            "explanation": "Amazon CloudWatch permite monitoramento de métricas e logs, enquanto o AWS X-Ray ajuda na observabilidade de aplicações distribuídas. [Fonte: AWS Monitoring Services]"
+        },
+        {
+            "question": "Qual serviço AWS permite hospedar aplicações web sem gerenciar infraestrutura?",
+            "options": ["Amazon EC2", "AWS Lambda", "AWS Elastic Beanstalk", "Amazon S3"],
+            "answers": [2],
+            "explanation": "AWS Elastic Beanstalk permite hospedar aplicações web automaticamente gerenciando infraestrutura. [Fonte: AWS Elastic Beanstalk]"
+        },
+        {
+            "question": "Quais serviços AWS oferecem proteção contra ataques DDoS?",
+            "options": ["AWS Shield", "AWS WAF", "AWS Config", "Amazon GuardDuty"],
+            "answers": [0, 1],
+            "explanation": "AWS Shield e AWS WAF ajudam a proteger contra ataques DDoS e tráfego malicioso. [Fonte: AWS Security Services]"
+        },
+        {
+            "question": "Qual serviço AWS permite controlar e auditar permissões e acessos de usuários?",
+            "options": ["AWS IAM", "AWS Organizations", "AWS Secrets Manager", "AWS KMS"],
+            "answers": [0],
+            "explanation": "AWS IAM permite criar, gerenciar usuários e definir permissões de acesso. [Fonte: AWS Identity and Access Management]"
+        },
+        {
+            "question": "Qual serviço AWS é recomendado para processamento de Big Data?",
+            "options": ["AWS Glue", "Amazon Redshift", "Amazon EMR", "AWS Data Pipeline"],
+            "answers": [2],
+            "explanation": "Amazon EMR é um serviço gerenciado para processamento de Big Data usando frameworks como Apache Hadoop e Spark. [Fonte: AWS EMR]"
+        },
+        {
+            "question": "Qual serviço AWS permite criar APIs gerenciadas e seguras?",
+            "options": ["AWS App Runner", "Amazon API Gateway", "AWS Lambda", "Amazon CloudFront"],
+            "answers": [1],
+            "explanation": "Amazon API Gateway permite criar, gerenciar e proteger APIs RESTful e WebSocket. [Fonte: Amazon API Gateway]"
+        },
+        {
+            "question": "Qual serviço AWS pode ser usado para entrega global de conteúdo com baixa latência?",
+            "options": ["Amazon CloudFront", "AWS Global Accelerator", "AWS Direct Connect", "AWS Lambda@Edge"],
+            "answers": [0],
+            "explanation": "Amazon CloudFront é uma rede de distribuição de conteúdo (CDN) que reduz a latência de entrega. [Fonte: AWS CloudFront]"
+        },
+        {
+            "question": "Quais são as formas de autenticação suportadas pelo AWS IAM?",
+            "options": ["Autenticação baseada em senha", "Autenticação multifator (MFA)", "Autenticação baseada em certificados", "Autenticação de chave SSH"],
+            "answers": [0, 1],
+            "explanation": "AWS IAM suporta autenticação baseada em senha e MFA, aumentando a segurança dos acessos. [Fonte: AWS IAM Best Practices]"
+        },
+        {
+            "question": "Qual serviço AWS permite gerenciar chaves de criptografia para proteger dados?",
+            "options": ["AWS Secrets Manager", "AWS Key Management Service (KMS)", "AWS Identity and Access Management (IAM)", "AWS Certificate Manager"],
+            "answers": [1],
+            "explanation": "AWS KMS permite gerenciar e usar chaves de criptografia para proteger dados em serviços da AWS. [Fonte: AWS KMS]"
+        },
+        {
+            "question": "Qual serviço AWS é recomendado para criar backups automáticos e recuperação de desastres?",
+            "options": ["AWS Backup", "AWS Elastic Disaster Recovery", "Amazon S3 Versioning", "Amazon Glacier"],
+            "answers": [0, 1],
+            "explanation": "AWS Backup gerencia backups automatizados e AWS Elastic Disaster Recovery ajuda na recuperação de desastres. [Fonte: AWS Backup Services]"
+        }
 ];
 
 let currentQuestionIndex = 0;
