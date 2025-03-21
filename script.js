@@ -1,4 +1,76 @@
-const questions =[
+const questions = [
+{
+    "question": "Quais são os benefícios mais comuns da computação em nuvem?",
+    "options": ["Custos variáveis em vez de fixos", "Escalabilidade sob demanda", "Maior responsabilidade do cliente pela infraestrutura", "Implantação global em minutos"],
+    "answers": [0, 1, 3],
+    "explanation": "Os principais benefícios da computação em nuvem incluem custo variável, escalabilidade sob demanda e a capacidade de implantar globalmente em minutos. [Fonte: AWS Cloud Computing Benefits]"
+},
+{
+    "question": "O que significa o modelo de responsabilidade compartilhada da AWS?",
+    "options": ["O cliente é responsável pela segurança física da nuvem", "A AWS gerencia a segurança da nuvem e o cliente gerencia a segurança dentro da nuvem", "A AWS gerencia todas as responsabilidades de segurança para o cliente", "O cliente é responsável pelo hardware e a AWS pelos dados"],
+    "answers": [1],
+    "explanation": "No modelo de responsabilidade compartilhada, a AWS protege a infraestrutura da nuvem, enquanto o cliente gerencia a segurança dos dados e configurações de acesso. [Fonte: AWS Shared Responsibility Model]"
+},
+{
+    "question": "Qual é a principal característica de um modelo de precificação baseado em pay-as-you-go?",
+    "options": ["Pagar apenas pelo que for utilizado", "Pagamento antecipado obrigatório", "Contrato fixo de longo prazo", "Custo fixo independente do uso"],
+    "answers": [0],
+    "explanation": "O modelo de pay-as-you-go permite pagar apenas pelos serviços consumidos, sem custos fixos antecipados. [Fonte: AWS Pricing]"
+},
+{
+    "question": "Quais serviços AWS podem ajudar a proteger uma infraestrutura em nuvem?",
+    "options": ["AWS Shield", "AWS WAF", "Amazon RDS", "AWS IAM"],
+    "answers": [0, 1, 3],
+    "explanation": "AWS Shield protege contra ataques DDoS, AWS WAF protege contra tráfego malicioso e IAM gerencia acessos e permissões. [Fonte: AWS Security Services]"
+},
+{
+    "question": "Qual das seguintes práticas de segurança deve ser aplicada ao criar políticas do AWS IAM?",
+    "options": ["Aplicar o princípio de privilégio mínimo", "Criar permissões amplas para facilitar o acesso", "Evitar rotação de credenciais", "Desativar autenticação multifator (MFA)"],
+    "answers": [0],
+    "explanation": "A prática recomendada é aplicar o princípio de privilégio mínimo, garantindo que os usuários tenham apenas as permissões necessárias. [Fonte: AWS IAM Best Practices]"
+},
+{
+    "question": "O que é AWS Artifact e como ele ajuda na conformidade?",
+    "options": ["Uma ferramenta para gerenciar infraestrutura como código", "Um serviço para visualizar e baixar relatórios de conformidade da AWS", "Uma API para criptografar dados armazenados no S3", "Um serviço para armazenar logs de auditoria"],
+    "answers": [1],
+    "explanation": "AWS Artifact fornece relatórios de conformidade e certificações da AWS para auditorias e regulamentações. [Fonte: AWS Artifact]"
+},
+{
+    "question": "Qual serviço AWS permite executar código sem gerenciar servidores?",
+    "options": ["Amazon EC2", "AWS Lambda", "AWS Fargate", "Amazon RDS"],
+    "answers": [1],
+    "explanation": "O AWS Lambda permite executar código sem necessidade de gerenciar servidores, cobrando apenas pelo tempo de execução. [Fonte: AWS Lambda]"
+},
+{
+    "question": "Quais serviços da AWS podem ser usados para armazenar dados estruturados?",
+    "options": ["Amazon S3", "Amazon DynamoDB", "Amazon RDS", "AWS Lambda"],
+    "answers": [1, 2],
+    "explanation": "Amazon RDS armazena dados relacionais estruturados, enquanto Amazon DynamoDB armazena dados NoSQL estruturados. [Fonte: AWS Databases]"
+},
+{
+    "question": "O que caracteriza um Amazon S3 Bucket configurado como 'Público'?",
+    "options": ["Pode ser acessado apenas via IAM", "Tem políticas de acesso abertas que permitem acesso a qualquer usuário da internet", "Exige autenticação multifator (MFA) para acesso", "Apenas usuários root podem acessar"],
+    "answers": [1],
+    "explanation": "Um bucket S3 público tem políticas de acesso que permitem que qualquer usuário da internet visualize ou modifique os arquivos armazenados. [Fonte: AWS S3 Security]"
+},
+{
+        "question": "Qual ferramenta AWS pode ser usada para estimar custos antes de utilizar serviços?",
+        "options": ["AWS Pricing Calculator", "AWS Cost Explorer", "AWS Budgets", "AWS CloudWatch"],
+        "answers": [0],
+        "explanation": "O AWS Pricing Calculator permite estimar custos com base nos serviços desejados antes da utilização. [Fonte: AWS Pricing Calculator]"
+    },
+    {
+        "question": "Qual plano de suporte AWS inclui acesso 24/7 a engenheiros de suporte e tempo de resposta de 15 minutos para incidentes críticos?",
+        "options": ["AWS Developer", "AWS Business", "AWS Enterprise", "AWS Basic"],
+        "answers": [2],
+        "explanation": "O AWS Enterprise Support inclui suporte 24/7 com tempo de resposta de 15 minutos para incidentes críticos. [Fonte: AWS Support Plans]"
+    },
+    {
+        "question": "Quais opções de pagamento a AWS oferece para reduzir custos em serviços como EC2 e RDS?",
+        "options": ["Instâncias Reservadas", "Spot Instances", "Savings Plans", "Instâncias de Demanda"],
+        "answers": [0, 1, 2],
+        "explanation": "Instâncias Reservadas, Spot Instances e Savings Plans ajudam a reduzir custos ao comprometer-se com uso antecipado ou utilizar capacidade ociosa da AWS. [Fonte: AWS Pricing Options]"
+    },
     {
         "question": "Quais são os cinco pilares do AWS Well-Architected Framework?",
         "options": ["Excelência Operacional", "Segurança", "Confiabilidade", "Eficiência de Performance", "Otimização de Custos", "Sustentabilidade", "Escalabilidade"],
