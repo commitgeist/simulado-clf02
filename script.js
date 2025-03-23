@@ -216,6 +216,9 @@ function loadQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
     const correctCount = currentQuestion.answers.length;
 
+    // Atualiza o contador de progresso
+    document.getElementById('progress-counter').innerText = `Pergunta ${currentQuestionIndex + 1} de ${questions.length}`;
+
     document.getElementById('question').innerText = currentQuestion.question;
     document.getElementById('explanation').innerText = "";
     const optionsList = document.getElementById('options');
@@ -256,6 +259,7 @@ function loadQuestion() {
     document.getElementById('submit-btn').disabled = true;
     document.getElementById('next-btn').disabled = true;
 }
+
 
 // Verifica se a resposta está correta e exibe feedback
 function checkAnswer() {
@@ -323,7 +327,7 @@ function restartQuiz() {
     loadQuestion();
 }
 
-window.onload = function() {
+window.onload = function () {
     shuffleQuestions(); // Embaralha perguntas ao carregar a página
     loadQuestion();
 };
