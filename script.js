@@ -88,6 +88,84 @@ const questions = [
         "answers": [1, 2],
         "explanation": "Amazon RDS armazena dados relacionais estruturados, enquanto Amazon DynamoDB armazena dados NoSQL estruturados. [Fonte: AWS Databases]"
     },
+      {
+    "question": "Qual plano de suporte da AWS é mais indicado para desenvolvedores que estão testando em ambientes não críticos e precisam apenas de suporte durante horário comercial?",
+    "options": [
+      "AWS Basic",
+      "AWS Developer",
+      "AWS Business",
+      "AWS Enterprise"
+    ],
+    "answers": [1],
+    "explanation": "O plano AWS Developer é ideal para ambientes de teste e desenvolvimento, oferecendo suporte técnico durante o horário comercial. [Fonte: AWS Support Plans]"
+  },
+  {
+    "question": "Qual plano de suporte da AWS oferece acesso a um Gerente Técnico de Conta (TAM), revisões de arquitetura e tempo de resposta de 15 minutos para incidentes críticos?",
+    "options": [
+      "AWS Business",
+      "AWS Developer",
+      "AWS Enterprise",
+      "AWS Basic"
+    ],
+    "answers": [2],
+    "explanation": "O AWS Enterprise Support oferece recursos premium como TAM dedicado, revisões proativas e resposta em 15 minutos para incidentes críticos. [Fonte: AWS Enterprise Support]"
+  },
+  {
+    "question": "Dentro da AWS Snow Family, qual dispositivo é mais indicado para migração em massa de petabytes de dados para a nuvem com segurança física e criptografia ponta a ponta?",
+    "options": [
+      "AWS Snowball",
+      "AWS Snowcone",
+      "AWS Snowmobile",
+      "Amazon EBS"
+    ],
+    "answers": [0],
+    "explanation": "O AWS Snowball é utilizado para transferências em larga escala de dados com segurança, ideal para migração de petabytes. [Fonte: AWS Snow Family]"
+  },
+  {
+    "question": "Qual opção da AWS Snow Family é ideal para ambientes remotos, com espaço e energia limitados, permitindo coleta e pré-processamento de dados localmente?",
+    "options": [
+      "AWS Snowball Edge",
+      "AWS Snowcone",
+      "Amazon S3 Glacier",
+      "AWS Outposts"
+    ],
+    "answers": [1],
+    "explanation": "O AWS Snowcone é o menor dispositivo da família, portátil, robusto e ideal para locais com baixa conectividade ou sem data centers. [Fonte: AWS Snowcone]"
+  },
+  {
+    "question": "Qual vantagem o AWS Transit Gateway oferece em comparação com VPC Peering em ambientes com múltiplas VPCs e conexões com redes on-premises?",
+    "options": [
+      "Menor latência entre VPCs",
+      "Conectividade ponto-a-ponto sem NAT",
+      "Gerenciamento centralizado e escalável de rotas",
+      "Requer menos zonas de disponibilidade"
+    ],
+    "answers": [2],
+    "explanation": "O AWS Transit Gateway permite centralizar a conectividade de rede entre várias VPCs e redes on-premises, escalando de forma mais eficiente do que o VPC Peering. [Fonte: AWS Transit Gateway]"
+  },
+  {
+    "question": "No AWS Cloud Adoption Framework (CAF), qual perspectiva trata do design, implementação e manutenção da infraestrutura técnica em ambientes de nuvem?",
+    "options": [
+      "Governança",
+      "Plataforma",
+      "Segurança",
+      "Operações"
+    ],
+    "answers": [1],
+    "explanation": "A perspectiva Plataforma do AWS CAF se concentra nos recursos técnicos usados para projetar e gerenciar a infraestrutura na nuvem. [Fonte: AWS CAF]"
+  },
+  {
+    "question": "Qual perspectiva do AWS CAF é responsável por monitorar, gerenciar e manter os serviços em operação contínua, garantindo SLA e desempenho adequado?",
+    "options": [
+      "Segurança",
+      "Governança",
+      "Plataforma",
+      "Operações"
+    ],
+    "answers": [3],
+    "explanation": "A perspectiva de Operações no AWS CAF foca na manutenção da operação contínua dos serviços de nuvem. [Fonte: AWS CAF]"
+    }
+    ,
     {
         "question": "Quais configurações ou permissões caracterizam um bucket do Amazon S3 como público, aumentando os riscos de exposição de dados sensíveis a acessos não autorizados?",
         "options": [
